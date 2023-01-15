@@ -265,6 +265,7 @@ body {
     height: 350px;
     transform: rotate(45deg);
 }
+
 /* .ach-no{
     font-size: 45px;
 } */
@@ -379,12 +380,14 @@ input {
         padding: 10px 20px;
 
     }
-    .header-banner-title-name{
+
+    .header-banner-title-name {
         display: flex;
-        text-size-adjust: auto;
+        /* font-size: 600px; */
     }
 
-    .quick-list,
+    .header-details,
+    .nav-container .quick-list,
     .q-list-images,
     .quick-details,
     .imp-feature,
@@ -395,6 +398,7 @@ input {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
     }
 
@@ -420,7 +424,9 @@ input {
         align-items: center;
     }
 
-    .footer-back, .contact, .section-title {
+    .footer-back,
+    .contact,
+    .section-title {
         display: flex;
         text-align: center;
         width: 100%;
