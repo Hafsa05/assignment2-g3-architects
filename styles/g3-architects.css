@@ -89,7 +89,7 @@ body {
     border: none;
     background: #FF900E;
     border-radius: 8px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 /* quick-list-styles */
@@ -155,7 +155,7 @@ body {
     gap: 21px;
 }
 
-.yellow-line{
+.yellow-line {
     border-left: 5px solid #FF900E;
     height: 106px;
 }
@@ -198,10 +198,11 @@ body {
     justify-content: center;
 }
 
-.feature-button{
+.feature-button {
     position: relative;
 }
-.feature-button-sec{
+
+.feature-button-sec {
     position: absolute;
     right: 0;
     left: 0;
@@ -218,7 +219,7 @@ body {
     background: #FF900E;
 }
 
-.feature-button-experience{
+.experience {
     font-size: 25px;
     font-weight: 500;
 }
@@ -240,13 +241,14 @@ body {
     font-size: 16px;
 }
 
-.achivement{
+/* achivement */
+.achivement {
     display: flex;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
 }
 
-.achivement-details{
+.achivement-details {
     width: 242px;
     height: 242px;
     border: 1px solid #FF900E;
@@ -258,17 +260,15 @@ body {
     transition: width 2s, height 2s, transform 2s;
 }
 
-.achivement-details:hover{
+.achivement-details:hover {
     width: 350px;
     height: 350px;
     transform: rotate(45deg);
 }
-
-.achivement-details h2, h4{
-    margin: 0;
-}
-
-.ach-text{
+/* .ach-no{
+    font-size: 45px;
+} */
+.ach-text {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -319,7 +319,7 @@ body {
 .contact {
     display: flex;
     gap: 100px;
-    justify-content: center; 
+    justify-content: center;
     color: #727272;
     background: rgba(255, 144, 14, 0.1);
 }
@@ -348,7 +348,7 @@ input {
     text-decoration: none;
 }
 
-.fa-brands.filled{
+.fa-brands.filled {
     color: #FF900E;
 }
 
@@ -369,7 +369,60 @@ input {
     color: #424242;
 }
 
-/* responsive part styles */
-@media screen {
-    
+/* media-queries */
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+    .header-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+
+    }
+    .header-banner-title-name{
+        display: flex;
+        text-size-adjust: auto;
+    }
+
+    .quick-list,
+    .q-list-images,
+    .quick-details,
+    .imp-feature,
+    .feature-part,
+    .feature-button,
+    .facts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .achivement {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .our-sponsors {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sponsor-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-back, .contact, .section-title {
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
 }
